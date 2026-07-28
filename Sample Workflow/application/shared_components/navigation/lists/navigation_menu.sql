@@ -1,0 +1,199 @@
+prompt --application/shared_components/navigation/lists/navigation_menu
+begin
+--   Manifest
+--     LIST: Navigation Menu
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.0'
+,p_default_workspace_id=>1501507331239726
+,p_default_application_id=>104
+,p_default_id_offset=>0
+,p_default_owner=>'APX26'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(1255848561077493452)
+,p_name=>'Navigation Menu'
+,p_static_id=>'navigation-menu'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1515744978289948926)
+,p_list_item_display_sequence=>35
+,p_list_item_link_text=>'Appraisal History'
+,p_static_id=>'appraisal-history'
+,p_list_item_link_target=>'f?p=&APP_ID.:29:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-server-clock'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'29'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1256052055578493767)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Employees'
+,p_static_id=>'employees'
+,p_list_item_link_target=>'f?p=&APP_ID.:8:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-users-alt'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(962636422866737890)
+,p_list_item_display_sequence=>1
+,p_list_item_link_text=>'Home'
+,p_static_id=>'home'
+,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-home'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1295497612528381180)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'Laptop Order Management'
+,p_static_id=>'laptop-order-management'
+,p_list_item_link_target=>'f?p=&APP_ID.:23:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-laptop'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_security_scheme=>wwv_flow_imp.id(1256045581670493716)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'23'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1495587264270505800)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'Login'
+,p_static_id=>'login'
+,p_list_item_link_target=>'f?p=&APP_ID.:24:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-lock-user'
+,p_list_item_disp_cond_type=>'USER_IS_PUBLIC_USER'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(333635756378444304)
+,p_list_item_display_sequence=>120
+,p_list_item_link_text=>'Manage Vacation Rules'
+,p_static_id=>'manage-vacation-rules'
+,p_list_item_link_target=>'f?p=&APP_ID.:20:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-plane'
+,p_security_scheme=>wwv_flow_imp.id(1256045581670493716)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'20'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1184772900350195478)
+,p_list_item_display_sequence=>5
+,p_list_item_link_text=>'More Information'
+,p_static_id=>'more-information'
+,p_list_item_link_target=>'f?p=&APP_ID.:14:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-info-square-o'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'14'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(22090084970681600)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'My Requests'
+,p_static_id=>'my-requests'
+,p_list_item_link_target=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-tasks'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1227382907566875298)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'My Tasks'
+,p_static_id=>'my-tasks'
+,p_list_item_link_target=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-tasks'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'3'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1508672171816310039)
+,p_list_item_display_sequence=>55
+,p_list_item_link_text=>'Pending Actions'
+,p_static_id=>'pending-actions'
+,p_list_item_link_target=>'f?p=&APP_ID.:25:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-user-clock'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'25'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(962827878400474614)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'Pending Approvals'
+,p_static_id=>'pending-approvals'
+,p_list_item_link_target=>'f?p=&APP_ID.:12:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-hourglass-2'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'12'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(962609783407379195)
+,p_list_item_display_sequence=>130
+,p_list_item_link_text=>'Setup'
+,p_static_id=>'setup'
+,p_list_item_link_target=>'f?p=&APP_ID.:21:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-gear'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'21'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1495547046665150290)
+,p_list_item_display_sequence=>110
+,p_list_item_link_text=>'Switch User'
+,p_static_id=>'switch-user'
+,p_list_item_link_target=>'f?p=&APP_ID.:24:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-user-pointer'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1246696828859211543)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Task Administration'
+,p_static_id=>'task-administration'
+,p_list_item_link_target=>'f?p=&APP_ID.:6:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-tasks'
+,p_list_item_disp_cond_type=>'USER_IS_NOT_PUBLIC_USER'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'6'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(15909638415983978)
+,p_list_item_display_sequence=>105
+,p_list_item_link_text=>'Workflow Dashboard'
+,p_static_id=>'workflow-dashboard'
+,p_list_item_link_target=>'f?p=&APP_ID.:30:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-dashboard'
+,p_security_scheme=>wwv_flow_imp.id(1256045581670493716)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1526073269811943906)
+,p_list_item_display_sequence=>90
+,p_list_item_link_text=>'Workflow Debug Messages'
+,p_static_id=>'workflow-debug-messages'
+,p_list_item_link_target=>'f?p=&APP_ID.:27:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-bug'
+,p_security_scheme=>wwv_flow_imp.id(1256045581670493716)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1526073723022948674)
+,p_list_item_display_sequence=>100
+,p_list_item_link_text=>'Workflow Status'
+,p_static_id=>'workflow-status'
+,p_list_item_link_target=>'f?p=&APP_ID.:19:&SESSION.::&DEBUG.'
+,p_list_item_icon=>'fa-workflow'
+,p_security_scheme=>wwv_flow_imp.id(1256045581670493716)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp.component_end;
+end;
+/
